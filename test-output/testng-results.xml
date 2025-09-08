@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-08T14:58:35 IST" name="Default suite" finished-at="2025-09-08T14:58:39 IST" duration-ms="4044">
+  <suite started-at="2025-09-08T17:16:56 IST" name="Default suite" finished-at="2025-09-08T17:17:03 IST" duration-ms="7306">
     <groups>
     </groups>
-    <test started-at="2025-09-08T14:58:35 IST" name="Default test" finished-at="2025-09-08T14:58:39 IST" duration-ms="4044">
+    <test started-at="2025-09-08T17:16:56 IST" name="Default test" finished-at="2025-09-08T17:17:03 IST" duration-ms="7306">
       <class name="com.dealer.testcases.LoginTest">
-        <test-method signature="openbrowser()[pri:0, instance:com.dealer.testcases.LoginTest@5542c4ed]" started-at="2025-09-08T14:58:35 IST" name="openbrowser" finished-at="2025-09-08T14:58:39 IST" duration-ms="4007" status="PASS">
+        <test-method signature="openbrowser()[pri:0, instance:com.dealer.testcases.LoginTest@1573f9fc]" started-at="2025-09-08T17:16:56 IST" name="openbrowser" finished-at="2025-09-08T17:17:03 IST" duration-ms="7263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
