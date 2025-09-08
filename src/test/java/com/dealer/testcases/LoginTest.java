@@ -28,7 +28,7 @@ public class LoginTest {
 
     // Validation
     Assert.assertEquals(actualResult, expectedResult, "Login validation failed!");
-	driver.close();
+	driver.quit();
 	
 	}
 }
