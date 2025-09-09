@@ -17,6 +17,7 @@ public	WebDriver driver;
 		driver = new  ChromeDriver();
 		log.info("Launching application URL");
 		driver.get("https://pro.smlsaarthi.com/login?redirect=%2F");
+		log.info(" web page is opon");
 		driver.manage().window().maximize();
 	}
 	
