@@ -7,14 +7,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest {
+import com.dealer.baseclass.BaseTest;
+
+public class LoginTest extends BaseTest {
 
 	@Test
 	public  void openbrowser() throws InterruptedException {
 		
-	WebDriver driver = new  ChromeDriver();
-	driver.get("https://pro.smlsaarthi.com/login?redirect=%2F");
-	driver.manage().window().maximize();
+	
 	driver.findElement(By.id("outlined-size-small")).sendKeys("SMLHR");
 	driver.findElement(By.xpath("//input[@placeholder=\"Password\"]")).sendKeys("Smlhr@123");
 	driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[1]/div/div[2]/div[3]/form/div/div[3]/span/input")).click();
