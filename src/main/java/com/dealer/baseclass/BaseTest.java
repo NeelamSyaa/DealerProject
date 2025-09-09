@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 
-	protected Logger log = LogManager.getLogger(this.getClass());
+protected Logger log = LogManager.getLogger(this.getClass());
 public	WebDriver driver;
 	@BeforeMethod
 	public void openwebpage() {
