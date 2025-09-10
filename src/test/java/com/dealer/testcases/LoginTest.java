@@ -1,5 +1,7 @@
 package com.dealer.testcases;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,22 +14,39 @@ import com.dealer.baseclass.BaseTest;
 public class LoginTest extends BaseTest {
 
 	@Test
-	public  void openbrowser() throws InterruptedException {
-	driver.findElement(By.id("outlined-size-small")).sendKeys("SMLHR");
-	log.info("user enter the username");
-	driver.findElement(By.xpath("//input[@placeholder=\"Password\"]")).sendKeys("Smlhr@123");
-	driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div[1]/div/div[2]/div[3]/form/div/div[3]/span/input")).click();
-	driver.findElement(By.xpath("//button[text()=\"Sign In\"]")).click();
-	Thread.sleep(3000);
-	WebElement homepage = driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[1]/h4[1]"));
-    String actualResult = homepage.getText();
+	public void loginpage() throws InterruptedException {
+		driver.findElement(By.id("outlined-size-small")).sendKeys("SMLHR");
+		log.info("user enter the username");
+		driver.findElement(By.xpath("//input[@placeholder=\"Password\"]")).sendKeys("Smlhr@123");
+		driver.findElement(
+				By.xpath("//*[@id=\"root\"]/div/div/div/div[1]/div/div[2]/div[3]/form/div/div[3]/span/input")).click();
+		driver.findElement(By.xpath("//button[text()=\"Sign In\"]")).click();
+		Thread.sleep(3000);
+		WebElement homepage = driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[1]/h4[1]"));
+		String actualResult = homepage.getText();
 
-    // Expected result (whatever text appears on dashboard)
-    String expectedResult = "Dashboard";
+		// Expected result (whatever text appears on dashboard)
+		String expectedResult = "Dashboard";
 
-    // Validation
-    Assert.assertEquals(actualResult, expectedResult, "Login validation failed!");
-	driver.close();
-	
+		// Validation
+		Assert.assertEquals(actualResult, expectedResult, "Login validation failed!");
+
+		WebElement clicksidebar = driver.findElement(By.xpath(
+				"//*[@id=\"root\"]/div/div/div/div/div/div[2]//ul/li[2]/a/div[2]/span[text()=\"Track and Trace\"]"));
+		clicksidebar.click();
+		Thread.sleep(2000);
+		String title = driver.getTitle();
+		Assert.assertTrue(title.contains("Track and Trace"));
+		Thread.sleep(2000);
+
+		// Verify Search Box is displayed
+		WebElement searchBox = driver.findElement(By.xpath("//input[@placeholder='Search Vehicle']"));
+		searchBox.sendKeys("KL02BY3691");
+		Assert.assertTrue(searchBox.isDisplayed());
+
+		// Verify at least one vehicle card is displayed
+		List<WebElement> vehicles = driver.findElements(By.xpath("//div[contains(@class,'vehicle-card')]"));
+		Assert.assertTrue(vehicles.size() > 0);
+
 	}
 }

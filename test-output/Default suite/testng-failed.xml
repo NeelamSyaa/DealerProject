@@ -5,7 +5,9 @@
     <classes>
       <class name="com.dealer.testcases.LoginTest">
         <methods>
-          <include name="openbrowser"/>
+          <include name="openwebpage"/>
+          <include name="teardwon"/>
+          <include name="loginpage"/>
         </methods>
       </class> <!-- com.dealer.testcases.LoginTest -->
     </classes>
