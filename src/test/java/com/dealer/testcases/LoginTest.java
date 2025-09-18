@@ -53,7 +53,7 @@ public class LoginTest extends BaseTest {
 		
 		Thread.sleep(2000);
 		String title = driver.getTitle();
-	System.out.println(title);
+		System.out.println(title);
 
 	}
 }
