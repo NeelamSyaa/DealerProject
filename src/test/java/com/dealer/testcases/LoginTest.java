@@ -35,10 +35,15 @@ public class LoginTest extends BaseTest {
 
 		// Validation
 		Assert.assertEquals(actualResult, expectedResult, "Login validation failed!");
-
-		WebElement clicksidebar = driver.findElement(By.xpath(
-				"//*[@id=\"root\"]/div/div/div/div/div/div[2]//ul/li[2]/a/div[2]/span[text()=\"Track and Trace\"]"));
-		clicksidebar.click();
+//
+//		WebElement clicksidebar = driver.findElement(By.xpath(
+//				"//*[@id=\"root\"]/div/div/div/div/div/div[2]//ul/li[2]/a/div[2]/span[text()=\"Track and Trace\"]"));
+//		clicksidebar.click();
+		WebElement trackAndTraceMenu = driver.findElement(By.xpath("//span[text()='Track and Trace']"));
+        Assert.assertTrue(trackAndTraceMenu.isDisplayed(), "Track and Trace menu is not displayed!");
+        
+        // Click menu
+        trackAndTraceMenu.click();
 
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		
@@ -48,17 +53,7 @@ public class LoginTest extends BaseTest {
 		
 		Thread.sleep(2000);
 		String title = driver.getTitle();
-		//Assert.assertTrue(title.contains("Track and Trace"));
-		//Thread.sleep(2000);
-
-//		// Verify Search Box is displayed
-//		WebElement searchBox = driver.findElement(By.xpath("//input[@placeholder='Search Vehicle']"));
-//		searchBox.sendKeys("KL02BY3691");
-//		Assert.assertTrue(searchBox.isDisplayed());
-//
-//		// Verify at least one vehicle card is displayed
-//		List<WebElement> vehicles = driver.findElements(By.xpath("//div[contains(@class,'vehicle-card')]"));
-//		Assert.assertTrue(vehicles.size() > 0);
+	System.out.println(title);
 
 	}
 }

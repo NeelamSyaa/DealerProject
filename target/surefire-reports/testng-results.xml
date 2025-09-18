@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-09T17:58:30 IST" name="Surefire suite" finished-at="2025-09-09T17:58:37 IST" duration-ms="7324">
+  <suite started-at="2025-09-18T17:22:52 IST" name="Surefire suite" finished-at="2025-09-18T17:23:01 IST" duration-ms="9421">
     <groups>
     </groups>
-    <test started-at="2025-09-09T17:58:30 IST" name="Surefire test" finished-at="2025-09-09T17:58:37 IST" duration-ms="7324">
+    <test started-at="2025-09-18T17:22:52 IST" name="Surefire test" finished-at="2025-09-18T17:23:01 IST" duration-ms="9421">
       <class name="com.dealer.testcases.LoginTest">
-        <test-method is-config="true" signature="openwebpage()[pri:0, instance:com.dealer.testcases.LoginTest@6fa34d52]" started-at="2025-09-09T17:58:30 IST" name="openwebpage" finished-at="2025-09-09T17:58:34 IST" duration-ms="3638" status="PASS">
+        <test-method is-config="true" signature="openwebpage()[pri:0, instance:com.dealer.testcases.LoginTest@1ae8bcbc]" started-at="2025-09-18T17:22:52 IST" name="openwebpage" finished-at="2025-09-18T17:22:55 IST" duration-ms="3334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openwebpage -->
-        <test-method signature="openbrowser()[pri:0, instance:com.dealer.testcases.LoginTest@6fa34d52]" started-at="2025-09-09T17:58:34 IST" name="openbrowser" finished-at="2025-09-09T17:58:37 IST" duration-ms="3562" status="PASS">
+        <test-method signature="loginpage()[pri:0, instance:com.dealer.testcases.LoginTest@1ae8bcbc]" started-at="2025-09-18T17:22:55 IST" name="loginpage" finished-at="2025-09-18T17:23:01 IST" duration-ms="5886" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openbrowser -->
-        <test-method is-config="true" signature="teardwon()[pri:0, instance:com.dealer.testcases.LoginTest@6fa34d52]" started-at="2025-09-09T17:58:37 IST" name="teardwon" finished-at="2025-09-09T17:58:37 IST" duration-ms="100" status="PASS">
+        </test-method> <!-- loginpage -->
+        <test-method is-config="true" signature="teardwon()[pri:0, instance:com.dealer.testcases.LoginTest@1ae8bcbc]" started-at="2025-09-18T17:23:01 IST" name="teardwon" finished-at="2025-09-18T17:23:01 IST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardwon -->
