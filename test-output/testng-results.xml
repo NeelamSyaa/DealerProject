@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-10T15:44:24 IST" name="Default suite" finished-at="2025-09-10T15:44:32 IST" duration-ms="7633">
+  <suite started-at="2025-09-18T17:15:10 IST" name="Default suite" finished-at="2025-09-18T17:15:22 IST" duration-ms="11929">
     <groups>
     </groups>
-    <test started-at="2025-09-10T15:44:24 IST" name="Default test" finished-at="2025-09-10T15:44:32 IST" duration-ms="7633">
+    <test started-at="2025-09-18T17:15:10 IST" name="Default test" finished-at="2025-09-18T17:15:22 IST" duration-ms="11929">
       <class name="com.dealer.testcases.LoginTest">
-        <test-method is-config="true" signature="openwebpage()[pri:0, instance:com.dealer.testcases.LoginTest@79c7532f]" started-at="2025-09-10T15:44:24 IST" name="openwebpage" finished-at="2025-09-10T15:44:28 IST" duration-ms="3657" status="PASS">
+        <test-method is-config="true" signature="openwebpage()[pri:0, instance:com.dealer.testcases.LoginTest@16c63f5]" started-at="2025-09-18T17:15:10 IST" name="openwebpage" finished-at="2025-09-18T17:15:16 IST" duration-ms="5807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openwebpage -->
-        <test-method signature="loginpage()[pri:0, instance:com.dealer.testcases.LoginTest@79c7532f]" started-at="2025-09-10T15:44:28 IST" name="loginpage" finished-at="2025-09-10T15:44:31 IST" duration-ms="3778" status="FAIL">
+        <test-method signature="loginpage()[pri:0, instance:com.dealer.testcases.LoginTest@16c63f5]" started-at="2025-09-18T17:15:16 IST" name="loginpage" finished-at="2025-09-18T17:15:22 IST" duration-ms="5884" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -22,7 +22,7 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at com.dealer.testcases.LoginTest.loginpage(LoginTest.java:39)
+at com.dealer.testcases.LoginTest.loginpage(LoginTest.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -55,7 +55,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpage -->
-        <test-method is-config="true" signature="teardwon()[pri:0, instance:com.dealer.testcases.LoginTest@79c7532f]" started-at="2025-09-10T15:44:31 IST" name="teardwon" finished-at="2025-09-10T15:44:32 IST" duration-ms="156" status="PASS">
+        <test-method is-config="true" signature="teardwon()[pri:0, instance:com.dealer.testcases.LoginTest@16c63f5]" started-at="2025-09-18T17:15:22 IST" name="teardwon" finished-at="2025-09-18T17:15:22 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardwon -->
