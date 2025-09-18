@@ -54,6 +54,18 @@ public class LoginTest extends BaseTest {
 		Thread.sleep(2000);
 		String title = driver.getTitle();
 		System.out.println(title);
-
+WebElement filterbt = driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/div/div/div/div/div[@class=\"MuiBox-root css-el4tjo\"]//button"));
+Thread.sleep(2000);
+filterbt.click();
+Thread.sleep(2000);
+WebElement filterbtn = driver.findElement(By.xpath("//*[@id=\"popover-filter\"]/div[3]/div/div[1]//ul/div[2]//span[text()=\"Filter\"]"));
+Thread.sleep(2000);
+filterbtn.click();
+WebElement fitercheckbox = driver.findElement(By.xpath("//*[@id=\"popover-filter\"]/div[3]/div/div[2]/div/div/table/tbody/tr[5]/td/fieldset/label[1]//input[@type=\"checkbox\"]"));
+Thread.sleep(2000);
+fitercheckbox.click();
+WebElement filterbtnapply = driver.findElement(By.xpath("//button[text()=\"APPLY\"]"));
+Thread.sleep(2000);
+filterbtnapply.click();
 	}
 }
