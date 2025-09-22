@@ -24,7 +24,7 @@ public	WebDriver driver;
 	@AfterMethod
 	public void teardwon() {
 		
-	        //driver.quit();  // Close browser only if it was launched
+	        driver.quit();  // Close browser only if it was launched
 	    }
 	
 }

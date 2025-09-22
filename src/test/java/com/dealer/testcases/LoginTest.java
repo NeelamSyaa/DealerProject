@@ -11,6 +11,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -61,11 +62,19 @@ Thread.sleep(2000);
 WebElement filterbtn = driver.findElement(By.xpath("//*[@id=\"popover-filter\"]/div[3]/div/div[1]//ul/div[2]//span[text()=\"Filter\"]"));
 Thread.sleep(2000);
 filterbtn.click();
-WebElement fitercheckbox = driver.findElement(By.xpath("//*[@id=\"popover-filter\"]/div[3]/div/div[2]/div/div/table/tbody/tr[5]/td/fieldset/label[1]//input[@type=\"checkbox\"]"));
+WebElement fiterrediobtn = driver.findElement(By.xpath("//*[@id=\"popover-filter\"]/div[3]/div/div[2]/div/div/table/tbody/tr[5]/td/fieldset/label[1]//input[@type=\"checkbox\"]"));
 Thread.sleep(2000);
-fitercheckbox.click();
+fiterrediobtn.click();
 WebElement filterbtnapply = driver.findElement(By.xpath("//button[text()=\"APPLY\"]"));
 Thread.sleep(2000);
 filterbtnapply.click();
+WebElement Srachbar = driver.findElement(By.xpath("//div//input[@placeholder=\"Search Vehicle\"]"));
+Srachbar.sendKeys("PB32AC7738");
+  WebElement smollcard = driver.findElement(By.id("it_861729074771918"));
+  smollcard.click();
+  
+  WebElement element = driver.findElement(By.xpath("//div//p[text()=\"Warning Lamps\"]"));
+  Actions actions = new Actions(driver);
+  actions.moveToElement(element).perform();
 	}
 }
