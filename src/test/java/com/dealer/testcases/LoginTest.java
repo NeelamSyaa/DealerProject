@@ -3,6 +3,7 @@ package com.dealer.testcases;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -69,12 +70,23 @@ WebElement filterbtnapply = driver.findElement(By.xpath("//button[text()=\"APPLY
 Thread.sleep(2000);
 filterbtnapply.click();
 WebElement Srachbar = driver.findElement(By.xpath("//div//input[@placeholder=\"Search Vehicle\"]"));
-Srachbar.sendKeys("PB32AC7738");
+           Srachbar.sendKeys("PB32AC7738");
+
   WebElement smollcard = driver.findElement(By.id("it_861729074771918"));
   smollcard.click();
   
   WebElement element = driver.findElement(By.xpath("//div//p[text()=\"Warning Lamps\"]"));
   Actions actions = new Actions(driver);
   actions.moveToElement(element).perform();
+  
+  // multipale window handle and tabs
+  
+  // String fistwindow = driver.getWindowHandle();
+   
+   //Set<String> nextwindow = driver.getWindowHandles();
+          
+         
+                     
+                     
 	}
 }
