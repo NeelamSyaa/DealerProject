@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -14,7 +15,7 @@ public	WebDriver driver;
 	@BeforeMethod
 	public void openwebpage() {
 	
-		driver = new  ChromeDriver();
+		driver = new  FirefoxDriver();
 		log.info("Launching application URL");
 		driver.get("https://pro.smlsaarthi.com/login?redirect=%2F");
 		log.info(" web page is opon");

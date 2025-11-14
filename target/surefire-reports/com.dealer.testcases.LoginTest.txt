@@ -1,19 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.dealer.testcases.LoginTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 1.133 s <<< FAILURE! - in com.dealer.testcases.LoginTest
-com.dealer.testcases.LoginTest.openwebpage  Time elapsed: 0.984 s  <<< FAILURE!
-org.openqa.selenium.remote.NoSuchDriverException: 
-Unable to obtain: chromedriver, error Failed to run command: [--browser, chrome, --language-binding, java, --output, json]
-Build info: version: '4.35.0', revision: '1c58e5028b'
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.204 s <<< FAILURE! - in com.dealer.testcases.LoginTest
+com.dealer.testcases.LoginTest.loginpage  Time elapsed: 2.06 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #username
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.36.0', revision: '6d115cfd87'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: driver.version: ChromeDriver
-Caused by: org.openqa.selenium.WebDriverException: 
-Failed to run command: [--browser, chrome, --language-binding, java, --output, json]
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: driver.version: ChromeDriver
-Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "C:\Users\Admin\.cache\selenium\manager\0.4.35\selenium-manager.exe": CreateProcess error=4551, An Application Control policy has blocked this file
-Caused by: java.io.IOException: Cannot run program "C:\Users\Admin\.cache\selenium\manager\0.4.35\selenium-manager.exe": CreateProcess error=4551, An Application Control policy has blocked this file
-Caused by: java.io.IOException: CreateProcess error=4551, An Application Control policy has blocked this file
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [eb627af9-a5ab-4222-b990-8077888760ec, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 145.0, moz:accessibilityChecks: false, moz:buildID: 20251106194447, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29668, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: eb627af9-a5ab-4222-b990-8077888760ec
+	at com.dealer.testcases.LoginTest.loginpage(LoginTest.java:16)
 
